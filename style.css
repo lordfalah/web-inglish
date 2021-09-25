@@ -346,7 +346,17 @@ body{
 .people-say{
     width: 100%;
     /* height: 300px; */
-    background-color: lightskyblue;
+    /* background-color: rgb(156, 216, 253); */
+    background: rgba( 115, 172, 242, 0.35 );
+    box-shadow: 0 5px 20px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+
+
     position: relative;
     padding: 20xp;
     box-sizing: border-box;
@@ -361,7 +371,7 @@ body{
     width: 200px;
     height: 200px;
     background-size: cover;
-
+    margin-left: -80px;
 }
 
 .people-say .coma-right .coma-bottom{
@@ -369,7 +379,8 @@ body{
     width: 200px;
     height: 200px;
     background-size: cover;
-    margin-right: 40px;
+    /* margin-right: 40px; */
+    margin-top: -50px;
 }
 
 .people-say .coma-right{
@@ -390,27 +401,98 @@ body{
     gap: 50px;
     width: 100%;
     margin-top: -80px;
+    /* grid-template-rows: repeat(auto-fit, minmax(250px, 1fr)); */
+    justify-items: center;
 }
 
 .people-say .box-parent-say .box-say1{
-    width: 180px;
-    height: 200px;
-    background-color: lightyellow;
+    /* width: 180px; */
+    /* height: 200px; */
+    /* background-color: lightyellow; */
+    background: rgba( 115, 172, 242, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
     grid-area: say1;
+    padding: 15px;
 }
 
+.people-say .box-parent-say .box-say1 .account-human{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.people-say .box-parent-say .box-say1 .account-human .img-human1{
+    background-image: url(img/chat-man.png);
+    width: 120px;
+    height: 100px;
+    background-size: cover;
+}
+
+.people-say .box-parent-say .box-say2 .account-human{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.people-say .box-parent-say .box-say2 .account-human .img-human2{
+    background-image: url(img/chat-man.png);
+    width: 120px;
+    height: 100px;
+    background-size: cover;
+}
+
+.people-say .box-parent-say .box-say3 .account-human{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.people-say .box-parent-say .box-say3 .account-human .img-human3{
+    background-image: url(img/chat-man.png);
+    width: 120px;
+    height: 100px;
+    background-size: cover;
+}
+
+
+
 .people-say .box-parent-say .box-say2{
-    width: 180px;
-    height: 200px;
-    background-color: rgb(224, 224, 95);
+    /* width: 180px; */
+    /* height: 200px; */
+    /* background-color: rgb(224, 224, 95); */
+    background: rgba( 245, 166, 35, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+
     grid-area: say2;
+    padding: 15px;
 }
 
 .people-say .box-parent-say .box-say3{
-    width: 300px;
-    height: 100px;
-    background-color: rgb(153, 153, 10);
+    width: 80%;
+
+    background: rgba( 248, 0, 60, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    padding: 15px;
     grid-area: say3;
+    /* align-items: center; */
+
 }
 
 
@@ -427,12 +509,12 @@ body{
 
     html{
         width: 100%;
-        overflow-x: scroll;
+        overflow-y: scroll;
     }
 
 
     body{
-        /* overflow-x: hidden; */
+        overflow: hidden;
         width: 100%;
         
         
@@ -450,7 +532,7 @@ body{
     body{
         overflow-x: hidden;
         /* width: 100%; */
-        
+        height: 3200px;
     }
 
     .question-chat .question-dialog .dialog-client .box-dialog1{
@@ -532,11 +614,13 @@ body{
 
 
     html{
-        overflow-x: scroll;
+        overflow-y: scroll;
+        /* height: 3500px; */
     }
 
     body{
         overflow: hidden;
+        height: 3800px;
     }
 
     .question-chat .question-dialog .dialog-client{
@@ -573,6 +657,31 @@ body{
         right: -50px;
         top: 70px;
     }
+
+    .content-people{
+        margin: auto;
+        width: 75%;
+        margin-top: 200px;
+
+    }
+
+
+    .people-say .coma-top{
+        width: 150px;
+        height: 150px;
+        margin-left: -70px;
+    }
+
+
+    .people-say .box-parent-say{
+        margin-top: -35px;
+    }
+
+    .people-say .coma-right .coma-bottom{
+        width: 150px;
+        height: 150px;
+    }
+
 }
 
 
@@ -580,13 +689,13 @@ body{
 @media (max-width: 575.98px) {
 
     html{
-        overflow-x: scroll;
+        /* overflow-x: scroll; */
     }
 
     body{
         overflow-x: hidden;
         /* width: 100%; */
-        height: 4000px;
+        height: 4600px;
     }
 
 
@@ -689,13 +798,32 @@ body{
         height: 90px;
     }
 
+    .content-people{
+        margin: auto;
+        margin-top: 150px;
+    }
+
+    .people-say .box-parent-say{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .people-say{
+        /* margin: auto; */
+        /* width: 80% !important; */
+    }
+
 }
 
 
 @media (max-width: 410.92px) {
 
+    html{
+        overflow-x: hidden;
+    }
+
     body{
-        height: 5000px;
+        height: 5500px;
     }
 
     .box{
@@ -745,6 +873,11 @@ body{
     .box-dialog3 .chat-oval3{
         width: 210px;
         height: 115px;
+    }
+
+
+    .content-people{
+        margin-top: 180px;
     }
 
 }
