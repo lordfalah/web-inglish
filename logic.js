@@ -1,20 +1,19 @@
 
-const getNav = document.querySelector("nav");
-const backgroundNav = document.querySelector(".parent-first");
+export function fullCollom(full){
+    full.forEach(allImg =>{
+        let getString = allImg.className.split(" ")[0];
+        
+        if(getString === "gambar-full"){
+            allImg.classList.remove("col-md-8");
+            console.log("col 8");
+        
+        }else if(getString === "text-full"){
+            allImg.classList.remove("col-md-4");
+            console.log("col 4");
+        };
+    });
+};
 
-$(window).scroll(function(){
-    let wScroll = $(this).scrollTop();
 
-    if(wScroll >= getNav.offsetTop + 2){
-        console.log("akhir");
-        // backgroundNav.classList.remove("color-random");
 
-        // getNav.classList.add("bg-primary");
-
-    
-    }else{
-        console.log("awal");
-        // getNav.classList.remove("bg-primary");
-    }
-})
 
