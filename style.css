@@ -129,6 +129,18 @@ body{
     margin-top: 100px;
 }
 
+.this-course .liner{
+    width: 100%;
+    margin: auto;
+}
+
+.this-course .liner .line1{
+    width: 50%;
+    margin: auto;
+    /* border-radius: 50%; */
+    padding: 20px;
+}
+
 .this-course .row .text-course{
     text-align: center;
     padding: 20px;
@@ -551,7 +563,7 @@ body{
 section.step-to-step{
     margin-top: 200px;
     width: 100%;
-    background-color: coral;
+    background-color: #c7e1f3;
     padding: 20px;
     position: absolute;
     z-index: 1;
@@ -589,6 +601,12 @@ section.step-to-step{
 
 .container .right-img-create1 .card-photo-left{
     grid-area: left1;
+    transition: 0.80s ease;
+    transform: translateX(-750px) scale(0);
+}
+
+.container .right-img-create1 .card-photo-left.horizontalLeft{
+    transform: translateX(0px) scale(1);
 }
 
 .container .right-img-create1 .circle-mid{
@@ -606,12 +624,21 @@ section.step-to-step{
 }
 
 .container .parent-box .box-photo2 .circle-ground1{
-    background-color: red;
+    background-color: lightsalmon;
     width: 70px;
     height: 70px;
     border-radius: 50%;    
     grid-area: mid1;
     position: relative;
+    transition: 0.50s ease-in-out;
+    cursor: pointer;
+}
+
+.container .parent-box .box-photo2 .circle-ground1.color-set{
+    background-color: rgb(255,69,0);
+    box-shadow: 0px 0px 35px 3px rgba(255,0,0,0.79);
+    -webkit-box-shadow: 0px 0px 35px 3px rgba(255,0,0,0.79);
+    -moz-box-shadow: 0px 0px 35px 3px rgba(255,0,0,0.79);
 }
 
 .container .parent-box .box-photo2 .circle-ground1 .line-mid{
@@ -627,9 +654,18 @@ section.step-to-step{
     z-index: -1;
 }
 
+
+
+
 /* bottom2 */
 .container .right-img-create1 .card-photo-left2{
     grid-area: right2;
+    transition: 0.80s ease;
+    transform: translateX(750px) scale(0);
+}
+
+.container .right-img-create1 .card-photo-left2.horizontalRight{
+    transform: translateX(0px) scale(1);
 }
 
 .card-photo-left2 .parent-box .box-photo2 .photo-text{

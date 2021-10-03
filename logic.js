@@ -15,5 +15,25 @@ export function fullCollom(full){
 };
 
 
+// source code effect backrgound color all circle ground
+
+let count = 1;
+export function repeatAll(all){
+    setInterval(() =>{
+        let ganda = count++;
+
+        if(ganda % 2 == 0){
+            all.forEach(allCircle => {
+                allCircle.classList.add("color-set");
+            });
+        
+        }else{
+            // console.log("Modulus 1");
+            all.forEach(allCircle => {
+                allCircle.classList.remove("color-set");
+            });
+        };
+    }, 1000);
+};
 
 
