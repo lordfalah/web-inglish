@@ -1,25 +1,14 @@
-import {fullCollom, repeatAll} from './logic.js';
+import {
+    fullCollom, 
+    repeatAll,  
+    scrollWindow
+} from './logic.js';
 
 
 
 const getNav = document.querySelector("nav");
 const backgroundNav = document.querySelector(".parent-first");
 
-$(window).scroll(function(){
-    let wScroll = $(this).scrollTop();
-
-    if(wScroll >= getNav.offsetTop + 2){
-        // console.log("akhir");
-        // backgroundNav.classList.remove("color-random");
-
-        // getNav.classList.add("bg-primary");
-
-    
-    }else{
-        // console.log("awal");
-        // getNav.classList.remove("bg-primary");
-    }
-})
 
 
 // responsive
@@ -43,27 +32,8 @@ repeatAll(circleGround);
 
 
 // scroll effect 
-
 const photoRegister1 = document.querySelector(".right-img-create1 .card-photo-left");
 const photoRegister2 = document.querySelector(".right-img-create1 .card-photo-left2");
+const photoRegister3 = document.querySelector(".card-photo-left3");
 
-
-function scrollWindow(){
-    $(window).scroll(function(){
-        let scrolling = $(this).scrollTop();
-        
-        console.log(scrolling)
-
-        if(scrolling >= photoRegister1.offsetTop + 3400){
-            console.log("nyampe");
-            photoRegister1.classList.add("horizontalLeft")
-        }
-
-        if(scrolling >= photoRegister2.offsetTop + 3500){
-            photoRegister2.classList.add("horizontalRight");
-        }
-        
-    })
-}
-
-scrollWindow();
+scrollWindow(photoRegister1, photoRegister2, photoRegister3);

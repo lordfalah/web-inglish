@@ -1,4 +1,4 @@
-
+// Remove colom responsive 
 export function fullCollom(full){
     full.forEach(allImg =>{
         let getString = allImg.className.split(" ")[0];
@@ -15,8 +15,8 @@ export function fullCollom(full){
 };
 
 
-// source code effect backrgound color all circle ground
 
+// source code effect backrgound color all circle ground
 let count = 1;
 export function repeatAll(all){
     setInterval(() =>{
@@ -35,5 +35,33 @@ export function repeatAll(all){
         };
     }, 1000);
 };
+
+
+
+// scrolling all effect
+export function scrollWindow(classComponent1, classComponent2, classComponent3){
+    $(window).scroll(function(){
+        let scrolling = $(this).scrollTop();
+        
+        // console.log(scrolling);
+
+        if(scrolling >= classComponent1.offsetTop + 3400){
+            // console.log("nyampe");
+            classComponent1.classList.add("horizontalLeft");
+        };
+
+        if(scrolling >= classComponent2.offsetTop + 3450){
+            classComponent2.classList.add("horizontalRight");
+        };
+        
+        if(scrolling >= classComponent3.offsetTop + 3500){
+            console.log("hayukk")
+            classComponent3.classList.add("horizontalLeftLast");
+        };  
+
+    });
+};
+
+
 
 
