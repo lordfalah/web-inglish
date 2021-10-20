@@ -39,11 +39,24 @@ export function repeatAll(all){
 
 
 // scrolling all effect
-export function scrollWindow(classComponent1, classComponent2, classComponent3){
+export function scrollWindow(classComponent1, classComponent2, classComponent3, classComponent4){
     $(window).scroll(function(){
         let scrolling = $(this).scrollTop();
         
         // console.log(scrolling);
+
+        if(scrolling >= classComponent4.offsetTop + 2900){
+            console.log("nyampe");
+            classComponent4.classList.add("registerLeft");
+
+            if(classComponent4.classList.contains("registerLeft")){
+                console.log(true)
+                setTimeout(() =>{
+                    classComponent4.style.transition = "0.80s ease";
+                    classComponent4.style.boxShadow = "23px 0px 37px -10px rgba(0,0,0,0.15) inset";    
+                }, 1100)
+            }
+        };
 
         if(scrolling >= classComponent1.offsetTop + 3400){
             // console.log("nyampe");
@@ -55,7 +68,7 @@ export function scrollWindow(classComponent1, classComponent2, classComponent3){
         };
         
         if(scrolling >= classComponent3.offsetTop + 3500){
-            console.log("hayukk")
+            // console.log("hayukk")
             classComponent3.classList.add("horizontalLeftLast");
         };  
 

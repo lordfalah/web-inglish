@@ -35,5 +35,15 @@ repeatAll(circleGround);
 const photoRegister1 = document.querySelector(".right-img-create1 .card-photo-left");
 const photoRegister2 = document.querySelector(".right-img-create1 .card-photo-left2");
 const photoRegister3 = document.querySelector(".card-photo-left3");
+const getRegister = document.querySelector(".register");
+const effectRegister = document.querySelector(".register .follow-step");
 
-scrollWindow(photoRegister1, photoRegister2, photoRegister3);
+scrollWindow(photoRegister1, photoRegister2, photoRegister3, effectRegister);
+
+console.log(effectRegister);
+
+
+
+
+
+

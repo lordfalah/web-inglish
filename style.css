@@ -71,11 +71,6 @@ body{
     width: 100%;
     height: 500px;
     position: relative;
-    /* top: -5px; */
-    /* background-position: -50px 0; */
-    /* display: flex;
-    justify-content: flex-end; */
-
     display: flex;
     align-items: center;
 }
@@ -127,16 +122,23 @@ body{
 
 .parent-first .this-course{
     margin-top: 100px;
+    background: rgba( 115, 172, 242, 0.35 );
+    /* background: rgba(95, 92, 92, 0.25); */
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
 }
 
-.this-course .liner{
+.liner{
     width: 100%;
     margin: auto;
+    margin-top: 100px;
 }
 
-.this-course .liner .line1{
+.liner .line1{
     width: 50%;
     margin: auto;
+    /* border: 5px solid black; */
     /* border-radius: 50%; */
     padding: 20px;
 }
@@ -215,17 +217,14 @@ body{
 
 .question-chat{
     margin-top: 150px;
-    /* background-color: rgba(168, 191, 255, 0.4); */
-    /* background-color: rgba(0, 0, 0, 0.20); */
-    /* background: rgba( 78, 78, 78, 0.25 ); */
-    background: rgba(95, 92, 92, 0.25);
+    background: rgba( 115, 172, 242, 0.25 );
+    /* background: rgba(95, 92, 92, 0.25); */
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    /* border-radius: 10px; */
-    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+
     width: 100%;
-    /* height: 650px; */
+
 }
 
 .question-chat .text-question{
@@ -359,7 +358,7 @@ body{
 .segitiga4{
     height:0px;
     width:0px;
-    border-right:solid 50px lightskyblue;
+    border-right:solid 50px rgba( 115, 172, 242, 0.35 );
     border-top:solid 35px transparent;
     border-bottom:solid 35px transparent;
     position: absolute;
@@ -370,24 +369,13 @@ body{
 
 .people-say{
     width: 100%;
-    /* height: 300px; */
-    /* background-color: rgb(156, 216, 253); */
     background: rgba( 115, 172, 242, 0.35 );
-    box-shadow: 0 5px 20px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 3px );
-    -webkit-backdrop-filter: blur( 3px );
-    border-radius: 10px;
+    box-shadow: 10px 0px 20px 0 rgba( 31, 38, 135, 0.40 );
+    border-radius: 5px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-
-
-
-
     position: relative;
     padding: 20xp;
     box-sizing: border-box;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 15px;
 }
 
 
@@ -436,8 +424,6 @@ body{
     /* background-color: lightyellow; */
     background: rgba( 115, 172, 242, 0.35 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 3px );
-    -webkit-backdrop-filter: blur( 3px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 
@@ -488,13 +474,8 @@ body{
 
 
 .people-say .box-parent-say .box-say2{
-    /* width: 180px; */
-    /* height: 200px; */
-    /* background-color: rgb(224, 224, 95); */
     background: rgba( 245, 166, 35, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 7.5px );
-    -webkit-backdrop-filter: blur( 7.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 
@@ -506,26 +487,26 @@ body{
 
 .people-say .box-parent-say .box-say3{
     width: 80%;
-
     background: rgba( 248, 0, 60, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 9.5px );
-    -webkit-backdrop-filter: blur( 9.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-
     padding: 15px;
     grid-area: say3;
-    /* align-items: center; */
-
 }
 
 
 /* register account */
 .register{
-    width: 100%;
     background-color: rgba(168, 191, 255, 0.4);
+    width: 100%;
+}
 
+.register .img-man-regis .title-register{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin-bottom: -50px;
 }
 
 .register .img-man-regis{
@@ -542,10 +523,27 @@ body{
     /* padding: 20px; */
 }
 
+.register .content-follow-step{
+    height: 100%;
+    background: rgb(234, 234, 245);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 23px 0px 37px -10px rgba(0,0,0,0.15) inset;
+    -webkit-box-shadow: 23px 0px 37px -10px rgba(0,0,0,0.15) inset;
+    -moz-box-shadow: 23px 0px 37px -10px rgba(0,0,0,0.15) inset;
+    position: relative;
+}
+
 .register .follow-step{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    /* height: 100px; */
     background-color: rgb(138, 255, 5);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -555,16 +553,17 @@ body{
     flex-direction: column;
     padding: 25px;
     row-gap: 10px;
-    box-shadow: 23px 0px 37px -10px rgba(0,0,0,0.15) inset;
+    /* box-shadow: 23px 0px 37px -10px rgba(0,0,0,0.15) inset;
     -webkit-box-shadow: 23px 0px 37px -10px rgba(0,0,0,0.15) inset;
-    -moz-box-shadow: 23px 0px 37px -10px rgba(0,0,0,0.15) inset;
+    -moz-box-shadow: 23px 0px 37px -10px rgba(0,0,0,0.15) inset; */
     text-align: center;
+    transition: 0.80s ease;
+    transform: translateX(800px);
+}
 
-    /* 
-    box-shadow: 23px 0px 14px -10px rgba(0,0,0,0.11) inset;
-    -webkit-box-shadow: 23px 0px 14px -10px rgba(0,0,0,0.11) inset;
-    -moz-box-shadow: 23px 0px 14px -10px rgba(0,0,0,0.11) inset;
-    */
+
+.register .follow-step.registerLeft{
+    transform: translateX(0);
 }
 
 
@@ -574,7 +573,7 @@ body{
 }
 
 section.step-to-step{
-    margin-top: 200px;
+    margin-top: 100px;
     width: 100%;
     background-color: #c7e1f3;
     padding: 20px;
@@ -725,7 +724,7 @@ section.step-to-step{
 section.free{
     background-color: #c7e1f3;
     /* height: 500px; */
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .free span h2{
@@ -736,7 +735,9 @@ section.free{
 }
 
 .free .content-free{
-    background-color: rgb(168, 191, 255, 0.4);
+    background: rgba( 115, 172, 242, 0.35 );
+    /* background: rgba(95, 92, 92, 0.25); */
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     padding: 20px;
     box-sizing: border-box;
 }
@@ -825,13 +826,23 @@ section.free{
 /* can get the diskon */
 
 section.diskon{
-    margin-top: 150px;
+    /* margin-top: 150px; */
 }
 
 .diskon h3{
     padding: 20px;
     margin-bottom: 40px;
 }
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    margin-top: 150px;
+    background-color: rgb(199, 225, 243);
+}
+
 
 
 /* client interview responsive */
@@ -978,8 +989,14 @@ section.diskon{
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    
+    html, body {
+        height: 100%;
+      }
 
+    .parent-first .this-course{
+        width: 100%;
+        
+    }
 
     html{
         overflow-y: scroll;
